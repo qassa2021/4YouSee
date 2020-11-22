@@ -1,0 +1,8 @@
+default: --color -p pretty -p chrome -p json
+#ci: -p dev -p chome -p json -p progress
+chrome:  BROWSER=chrome
+firefox: BROWSER=firefox
+html: --format html --out=log/report.html
+json: --format json --out=log/report.json
+pretty: --format pretty
+
