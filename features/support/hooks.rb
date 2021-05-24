@@ -3,7 +3,7 @@ require 'date'
 
 
 Before do 
-    @cadastro_page = CadastroPage.new
+    @prova_page = ProvaPage.new
    
     page.driver.browser.manage.window.maximize
 end
@@ -23,10 +23,10 @@ at_exit do
         config.input_path = "log/report.json"
         config.report_path = "log/" + @date
         config.report_types = [:html]
-        config.report_title = "4YouSee - webAPP"
+        config.report_title = "Itau - web - APP"
         config.compress_image = true
         config.additional_info = {"App" => "Web:", "Data de execução" => @date}
-        config.color = "indigo"
+        config.color = "yellow"
     end
     ReportBuilder.build_report
 end

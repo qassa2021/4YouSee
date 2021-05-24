@@ -1,7 +1,9 @@
 source 'http://rubygems.org'
 
 gem "capybara"
-gem "cucumber", "~> 3.1", ">= 3.1.2"
+gem "cucumber"
 gem "rspec"
-gem "selenium-webdriver", "~> 3.141"
+gem "selenium-webdriver"
 gem "report_builder"
+gem "ffi"
+gem "json"
